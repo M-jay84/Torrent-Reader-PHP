@@ -81,9 +81,9 @@ class Parse
 
         // V2 Get file list
         if (isset($info["file tree"]) && is_array($info["file tree"])) {
-            // For Now Dont Allow V2
-            unlink("$filename");
-            die("Ask Admin To Turn V2 Torrents On.");
+            // To not Allow V2
+            //unlink("$filename");
+            //die("Ask Admin To Turn V2 Torrents On.");
 
             $Iterator = new RecursiveIteratorIterator(
                 new RecursiveArrayIterator($info["file tree"]),
